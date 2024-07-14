@@ -33,7 +33,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3); /* Adjust opacity as needed */
-  backdrop-filter: blur(4px); /* Apply blur effect to the background */
+  backdrop-filter: blur(5px); /* Apply blur effect to the background */
 }
 
 
@@ -41,7 +41,7 @@
   position: absolute;
   width: 100%;
   height: 100vh; /* Set height to 100% of the viewport height */
-  z-index: -2; /* Ensure it's behind background-image */
+  z-index: -1; /* Ensure it's behind background-image */
   background-image: url('../src/images/background_image_3.jpg');
   background-size: cover;
   background-position: center;
@@ -53,7 +53,6 @@
 }
 
 .background-image-3::before {
-  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -78,7 +77,7 @@
 }
 
 .background-text {
-  color: #ffffff;
+  color: #D6C291;
   font-family: 'Verdana, Geneva, sans-serif';
   font-size: 24px;
   animation: slideUpText 1s ease-out forwards; /* Apply slide-up animation */
@@ -98,7 +97,7 @@
 .background-text-shop {
   color: white;
   font-family: Georgia, serif;
-  font-size: 64px;
+  font-size: 67px;
   margin-top: -350px; /* Adjust spacing between logo and text */
 }
 
@@ -111,7 +110,7 @@
   display: flex;
   justify-content: space-between; /* Space between logo, center buttons, and right icons */
   align-items: center; /* Center other content vertically */
-  background-color: #A57A5A;
+  background-color: transparent;
   padding: 20px;
   position: fixed; /* Fixed position to stay at the top */
   width: 100%; /* Ensure full width */
@@ -123,8 +122,8 @@
 .shop-button-big {
   padding: 20px 40px;
   background-color: transparent;
-  border: 2px solid white;
-  color: white;
+  border: 2px solid #D6C291;
+  color: #D6C291;
   font-family: 'Verdana, Geneva, sans-serif';
   font-size: 24px;
   cursor: pointer;
@@ -148,7 +147,7 @@
 }
 
 .shop-button-big:hover::before {
-  background-color: black; /* Change background color on hover */
+  background-color: white; /* Change background color on hover */
 }
 
 .top-bar {
@@ -168,7 +167,7 @@
 .actionName {
   background: none;
   border: none;
-  color: #ffffff;
+  color: #D6C291;
   font-family: 'Verdana, Geneva, sans-serif';
   font-size: 20px;
   padding: 0 10px;
@@ -201,7 +200,7 @@
 }
 
 .icon-link {
-  color: #ffffff;
+  color: #D6C291;
   font-size: 24px;
   display: flex; /* Make the icon links flex containers */
   align-items: center; /* Center items vertically */

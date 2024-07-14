@@ -26,7 +26,7 @@ const Home = () => {
               Our Story
             </Link>
             <Link to="" className="actionName">
-              Subscription
+              Undecided
             </Link>
           </div>
           <div className={`right-icons ${menuOpen ? 'show' : ''}`}>

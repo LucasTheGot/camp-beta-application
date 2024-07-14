@@ -20,16 +20,14 @@ function Home() {
               Shop
             </Link>
             <Link
-              to="/"
               className="actionName"
             >
               Our Story
             </Link>
             <Link
-              to="/"
               className="actionName"
             >
-              Subscription
+              Undecided
             </Link>
           </div>
           <div className="right-icons">
