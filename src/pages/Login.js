@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaInstagram, FaTiktok, FaFacebook, FaShoppingCart } from 'react-icons/fa';
+import { FaInstagram, FaTiktok, FaFacebook, FaShoppingCart} from 'react-icons/fa';
 import loadFonts from '../webFontLoader'; // Adjust the path as needed
 import '../App.css';
 import logoImage from '../images/company_icon.png'; // Adjust the path as needed
@@ -20,7 +20,8 @@ const Home = () => {
 
   return (
     <div className="App">
-      <header className="App-header">
+
+<header className="App-header">
         <div className="top-bar">
           <Link to="/">
             <img src={logoImage} alt="Logo" className="logo-image" />
@@ -60,19 +61,32 @@ const Home = () => {
           </button>
         </div>
       </header>
+      
+      <div className="background-image-8">
+        <div class = "wrapper">
+            <form action = "">
+                <h1 class="login-text">Login</h1>
+                <div class="input-box">
+                    <input type = "text" placeholder = "Username" required></input>
+                </div>
+                <div class="input-box">
+                    <input type = "password" placeholder = "Password" required></input>
+                </div>
 
-      <div className="background-image-3">
-        <p className="background-text-1-shop">Spreading Love, One Gift at a Time.</p>
-        <div className="background-image-overlay">
-          <div className="background-image-5"></div>
-          <div className="background-image-6"></div>
-          <div className="background-image-7"></div>
+                <div class = "remember-forgot">
+                    <label class="login-text">Remember me </label>
+                    <a href = "#">Forgot password?</a>
+                </div>
+
+                <button type = "submit" class = "btn">Login</button>
+
+                <div class = "register-link">
+                    <p class="login-text">Don't have an account? <a href = "#">Register</a></p>
+                </div>
+            </form>
         </div>
       </div>
-      <div className="background-image-4">
-        <p className="background-text-2-shop">Our products. Made simple.</p>
-        
-      </div>
+
 
       <div className="background-image-2">
   
@@ -89,6 +103,7 @@ const Home = () => {
   <div class="line"></div>
   <div class="business-info-txt-bottom">Terms of Use                   Privacy Policy             ©2024 resonategift.com</div>
 </div>
+
     </div>
   );
 }

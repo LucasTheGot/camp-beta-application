@@ -10,7 +10,6 @@
 .App {
   text-align: center;
   overflow-x: hidden; /* Disable horizontal scrolling */
-  overflow-y: hidden; /* Disable vertical scrolling if not needed */
 }
 
 .background-image {
@@ -32,33 +31,10 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3); /* Adjust opacity as needed */
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust opacity as needed */
   backdrop-filter: blur(5px); /* Apply blur effect to the background */
 }
 
-
-.background-image-3 {
-  position: absolute;
-  width: 100%;
-  height: 100vh; /* Set height to 100% of the viewport height */
-  z-index: -1; /* Ensure it's behind background-image */
-  background-image: url('../src/images/background_image_3.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.background-image-3::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 .background-logo {
   width: 150px; /* Adjust size as needed */
   margin-bottom: 20px;
@@ -77,9 +53,9 @@
 }
 
 .background-text {
-  color: #D6C291;
-  font-family: 'Verdana, Geneva, sans-serif';
-  font-size: 24px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
   animation: slideUpText 1s ease-out forwards; /* Apply slide-up animation */
   margin: 20px 0; /* Adjust margin to create space between elements */
   z-index: 1; /* Ensure it's above the background */
@@ -94,12 +70,7 @@
   }
 }
 
-.background-text-shop {
-  color: white;
-  font-family: Georgia, serif;
-  font-size: 67px;
-  margin-top: -350px; /* Adjust spacing between logo and text */
-}
+
 
 .content {
   height: 100vh; /* Adjust height to ensure it takes up the full viewport height */
@@ -122,9 +93,9 @@
 .shop-button-big {
   padding: 20px 40px;
   background-color: transparent;
-  border: 2px solid #D6C291;
-  color: #D6C291;
-  font-family: 'Verdana, Geneva, sans-serif';
+  border: 2px solid white;
+  color: white;
+  font-family: 'Playwrite Hrvatska Lijeva', Arial, sans-serif; /* Fallback to Arial or a generic sans-serif font */
   font-size: 24px;
   cursor: pointer;
   position: relative; /* Move relative to its normal position */
@@ -147,7 +118,7 @@
 }
 
 .shop-button-big:hover::before {
-  background-color: white; /* Change background color on hover */
+  background-color:#778DA9  ; /* Change background color on hover */
 }
 
 .top-bar {
@@ -167,8 +138,8 @@
 .actionName {
   background: none;
   border: none;
-  color: #D6C291;
-  font-family: 'Verdana, Geneva, sans-serif';
+  color: white;
+  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   padding: 0 10px;
   cursor: pointer;
@@ -183,8 +154,8 @@
 }
 
 .actionName:hover {
-  border-bottom: 3px solid white; /* Example of a solid black horizontal line */
-  color: white; /* Change color on hover */
+  border-bottom: 3px solid #778DA9  ; /* Example of a solid black horizontal line */
+  color: #778DA9  ; /* Change color on hover */
 }
 
 .right-icons {
@@ -200,14 +171,14 @@
 }
 
 .icon-link {
-  color: #D6C291;
+  color: white;
   font-size: 24px;
   display: flex; /* Make the icon links flex containers */
   align-items: center; /* Center items vertically */
 }
 
 .icon-link:hover {
-  color: #C7AD7F;
+  color: #778DA9;
 }
 
 .icon {
@@ -218,68 +189,11 @@
 
 .logo-image {
   position: absolute;
-  top: 5px; /* Adjust top position as needed */
+  top: 10px; /* Adjust top position as needed */
   left: 20px; /* Adjust left position as needed */
   height: 60px; /* Adjust height as needed */
   z-index: 1001; /* Ensure it is above the header background */
 }
-
-.dropdown-buttons {
-  display: flex;
-  align-items: center;
-  gap: 20px; /* Space between dropdown buttons */
-}
-
-.dropdown-button {
-  background: none;
-  border: none;
-  color: #ffffff;
-  font-family: 'Verdana, Geneva, sans-serif';
-  font-size: 20px;
-  padding: 0 10px;
-  cursor: pointer;
-}
-
-.dropdown-button:hover {
-  font-weight: bold; /* Make the text bold on hover */
-  color: white; /* Change color on hover */
-}
-
-.dropdown-content {
-  position: fixed; /* Change position to fixed */
-  top: 0; /* Align to the top of the viewport */
-  left: 0; /* Align to the left of the viewport */
-  width: 100%; /* Full width */
-  height: 25vh; /* 1/4th of the viewport height */
-  background-color: rgba(255, 255, 255, 0.9); /* Background color with some transparency */
-  color: black;
-  border-bottom: 1px solid #ccc; /* Border at the bottom */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 0 0 5px 5px;
-  overflow: hidden;
-  z-index: 1000;
-  display: flex;
-  justify-content: center; /* Center links horizontally */
-  align-items: center; /* Center links vertically */
-  flex-direction: column; /* Arrange links in a column */
-}
-
-.dropdown-content.show {
-  display: flex;
-}
-
-.dropdown-link {
-  display: block;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: #333;
-  transition: background-color 0.3s ease;
-}
-
-.dropdown-link:hover {
-  background-color: #f1f1f1;
-}
-
 
 /* Hamburger */
 
@@ -332,4 +246,240 @@
   .dropdown-content.show {
     display: flex; /* Display dropdown menu when open */
   }
+}
+
+/* Below is for Shop.js */
+
+.background-image-3 {
+  position: relative;
+  width: 100%;
+  height: 110vh; /* Set height to 100% of the viewport height */
+  background-image: url('../src/images/background_image_3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-image-3::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Adjust opacity as needed */
+  backdrop-filter: blur(5px); /* Apply blur effect to the background */
+}
+
+.background-image-4 {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Set height to 100% of the viewport height */
+  background-image: url('../src/images/background_image_4.jpg'); /* Path to your new background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-image-4::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Adjust opacity as needed */
+  backdrop-filter: blur(5px); /* Apply blur effect to the background */
+}
+
+.background-image-3 {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Set height to 100% of the viewport height */
+  background-image: url('../src/images/background_image_3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-image-3::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Adjust opacity as needed */
+  backdrop-filter: blur(5px); /* Apply blur effect to the background */
+}
+
+.background-image-2 {
+  position: relative;
+  width: 100%;
+  height: 30vh; /* Set height to 100% of the viewport height */
+  background-image: url('../src/images/background_image_2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-image-2::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Adjust opacity as needed */
+  backdrop-filter: blur(5px); /* Apply blur effect to the background */
+}
+
+.background-image-8 {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Set height to 100% of the viewport height */
+  background-image: url('../src/images/background_image_8.jpg'); /* Path to your new background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-image-8::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Adjust opacity as needed */
+  backdrop-filter: blur(5px); /* Apply blur effect to the background */
+}
+
+.background-text-shop {
+  color: #ffffff; 
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+  margin: 20px 0; /* Adjust margin to create space between elements */
+  z-index: 1; /* Ensure it's above the background */
+  position: relative; /* Ensure it's positioned relative to its normal flow */
+  top: -300px; /* Adjust this value to move the text up */
+}
+
+.background-image-overlay {
+  position: absolute;
+  gap: 300px;
+  margin-top: 120px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.background-image-5,
+.background-image-6,
+.background-image-7 {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background-image-5 {
+  margin-left: 100px; /* Adjust left margin */
+  background-image: url('../src/images/background_image_5.jpg');
+}
+
+.background-image-6 {
+  background-image: url('../src/images/background_image_6.jpg');
+}
+
+.background-image-7 {
+  margin-right: 100px; /* Adjust right margin */
+  background-image: url('../src/images/background_image_7.jpg');
+}
+
+
+/* Text in the background of the shop page */
+.background-text-1-shop {
+  color: #ffffff; 
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+  margin: 20px 0; /* Adjust margin to create space between elements */
+  z-index: 1; /* Ensure it's above the background */
+  position: relative; /* Ensure it's positioned relative to its normal flow */
+  top: -300px; /* Adjust this value to move the text up */
+}
+
+.background-text-2-shop {
+  color: #ffffff; 
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+  margin: 20px 0; /* Adjust margin to create space between elements */
+  z-index: 1; /* Ensure it's above the background */
+  position: relative; /* Ensure it's positioned relative to its normal flow */
+  top: -350px; /* Adjust this value to move the text up */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+  gap: 20px; /* Adjust gap between items */
+}
+
+/* */
+.business-info-img {  
+  position: absolute;
+  margin-right: 1600px;
+  margin-bottom: 0px;
+  height: 250px; /* Adjust height as needed */
+  z-index: 1001; /* Ensure it is above the header background */
+}
+
+.business-info-txt {
+  box-sizing: border-box; /* Include padding in the width */
+  margin-top: 100px;
+  z-index: 1;
+  text-align: left; /* Align text to the left inside the text box */
+  line-height: 1.5; /* Set line spacing */
+  color: white;
+  top: 50px; /* Adjust top position as needed */
+}
+.business-info-button {
+  z-index: 1002; /* Ensure it is above the text box */
+  color: white;
+  padding: 5px 10px; /* Optional: Add padding for better spacing */ 
+  text-decoration: none; /* Optional: Remove underline */
+  margin-right: 1200px;
+  display: flex; /* Make the login button a flex container */
+  text-align: left;
+  }
+
+
+
+.business-info-txt-bottom {
+  position:absolute;
+  top: 90%; /* Adjust the vertical position */
+  
+  color: white;
+}
+
+/* Login.js */
+.wrapper {
+  z-index: 1;
+}
+
+.login-text {
+  color: #ffffff; 
+  font-family: 'Montserrat', sans-serif;
+  z-index: 1; /* Ensure it's above the background */
 }
