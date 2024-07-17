@@ -62,16 +62,10 @@ const Home = () => {
         </div>
       </header>
 
-      <div className="background-image-3">
-        <p className="background-text-1-shop">Shop our selection of customizable gifts.</p>
-        <div className="background-image-overlay">
-          <div className="background-image-5"></div>
-          <div className="background-image-6"></div>
-          <div className="background-image-7"></div>
-        </div>
-      </div>
+        
       <div className="background-image-4">
         <p className="background-text-2-shop">Our products. Made simple.</p>
+
         
       </div>
 
