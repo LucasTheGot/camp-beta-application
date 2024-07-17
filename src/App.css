@@ -36,7 +36,7 @@
 }
 
 .background-logo {
-  width: 150px; /* Adjust size as needed */
+  width: 300px; /* Adjust size as needed */
   margin-bottom: 20px;
   z-index: 1; /* Ensure it's above the background */
 }
@@ -97,6 +97,7 @@
   color: white;
   font-family: 'Playwrite Hrvatska Lijeva', Arial, sans-serif; /* Fallback to Arial or a generic sans-serif font */
   font-size: 24px;
+  border-radius: 12px;
   cursor: pointer;
   position: relative; /* Move relative to its normal position */
   text-decoration: none;
@@ -114,11 +115,13 @@
   height: 100%;
   background-color: transparent;
   transition: background-color 0.3s; /* Smooth transition for background color */
+  border-radius: 12px;
   z-index: -1;
 }
 
 .shop-button-big:hover::before {
   background-color:#778DA9  ; /* Change background color on hover */
+  border-radius: 12px;
 }
 
 .top-bar {
@@ -189,9 +192,10 @@
 
 .logo-image {
   position: absolute;
+  border-radius: 10px;
   top: 10px; /* Adjust top position as needed */
-  left: 20px; /* Adjust left position as needed */
-  height: 60px; /* Adjust height as needed */
+  left: 10px; /* Adjust left position as needed */
+  height: 50px; /* Adjust height as needed */
   z-index: 1001; /* Ensure it is above the header background */
 }
 

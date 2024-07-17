@@ -2,10 +2,11 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaInstagram, FaTiktok, FaFacebook, FaShoppingCart} from 'react-icons/fa';
+import { FaInstagram, FaTiktok, FaEnvelope, FaShoppingCart} from 'react-icons/fa';
 import loadFonts from '../webFontLoader'; // Adjust the path as needed
 import '../App.css';
 import logoImage from '../images/company_icon.png'; // Adjust the path as needed
+import presentImage from '../images/present_icon.png'; // Adjust the path as needed
 
 const Home = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,9 +23,9 @@ const Home = () => {
     <div className="App">
 
 <header className="App-header">
-        <div className="top-bar">
+<div className="top-bar">
           <Link to="/">
-            <img src={logoImage} alt="Logo" className="logo-image" />
+            <img src={presentImage} alt="Logo" className="logo-image" />
           </Link>
           <div className={`nav ${menuOpen ? 'show' : ''}`}>
             <Link to="/shop" className="actionName">
@@ -44,11 +45,11 @@ const Home = () => {
             <a href="https://www.instagram.com/resonate_gifts" className="icon-link">
               <FaInstagram className="icon" />
             </a>
-            <a href="https://www.tiktok.com/@resinategifts" className="icon-link">
+            <a href="https://www.tiktok.com/@resonate_gifts?is_from_webapp=1&sender_device=pc" className="icon-link">
               <FaTiktok className="icon" />
             </a>
-            <a href="https://www.facebook.com" className="icon-link">
-              <FaFacebook className="icon" />
+            <a href="mailto:Resonate4LovedOnes@gmail.com" className="icon-link">
+              <FaEnvelope className="icon" />
             </a>
             <Link to="/" className="icon-link">
               <FaShoppingCart className="icon" />
