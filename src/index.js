@@ -4,10 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import {Elements} from '@stripe/react-stripe-js'
+import {loadStripe} from '@stripe/stripe-js'
+
+
+const stripePromise = loadStripe('pk_live_51PdguJFUHOU4BDRyZ36exUeWiV9Y8sLWKZ8KsIFk0TQQtsZnmDG84BBBb2kLlzmF8xlf3sPhcBN6VSrc9SchEGHV00DGJCbasa')
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Elements stripe={stripePromise}>
+      <App />
+    </Elements>
   </React.StrictMode>
 );
 

@@ -8,7 +8,7 @@ import '../App.css';
 import logoImage from '../images/company_icon.png'; // Adjust the path as needed
 import presentImage from '../images/present_icon.png'; // Adjust the path as needed
 
-const Home = () => {
+const Shop = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -88,4 +88,4 @@ const Home = () => {
   );
 }
 
-export default Home;
+export default Shop;

@@ -50,7 +50,7 @@ const Home = () => {
             <a href="mailto:Resonate4LovedOnes@gmail.com" className="icon-link">
               <FaEnvelope className="icon" />
             </a>
-            <Link to="/" className="icon-link">
+            <Link to="/checkout" className="icon-link">
               <FaShoppingCart className="icon" />
             </Link>
           </div>
