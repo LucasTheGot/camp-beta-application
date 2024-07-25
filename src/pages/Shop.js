@@ -30,7 +30,7 @@ const Shop = () => {
             <Link to="/shop" className="actionName">
               Shop
             </Link>
-            <Link to="" className="actionName">
+            <Link to="/about" className="actionName">
               About
             </Link>
             <Link to="" className="actionName">

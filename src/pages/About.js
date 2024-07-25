@@ -2,13 +2,13 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaInstagram, FaTiktok, FaEnvelope, FaShoppingCart} from 'react-icons/fa';
+import { FaInstagram, FaEnvelope, FaTiktok, FaShoppingCart } from 'react-icons/fa';
 import loadFonts from '../webFontLoader'; // Adjust the path as needed
 import '../App.css';
 import logoImage from '../images/company_icon.png'; // Adjust the path as needed
 import presentImage from '../images/present_icon.png'; // Adjust the path as needed
 
-const Login = () => {
+const About = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -21,9 +21,8 @@ const Login = () => {
 
   return (
     <div className="App">
-
-<header className="App-header">
-<div className="top-bar">
+      <header className="App-header">
+        <div className="top-bar">
           <Link to="/">
             <img src={presentImage} alt="Logo" className="logo-image" />
           </Link>
@@ -51,7 +50,7 @@ const Login = () => {
             <a href="mailto:Resonate4LovedOnes@gmail.com" className="icon-link">
               <FaEnvelope className="icon" />
             </a>
-            <Link to="/" className="icon-link">
+            <Link to="/checkout" className="icon-link">
               <FaShoppingCart className="icon" />
             </Link>
           </div>
@@ -63,31 +62,11 @@ const Login = () => {
         </div>
       </header>
       
-      <div className="background-image-8">
-        <div class = "wrapper">
-            <form action = "">
-                <h1 class="login-text">Login</h1>
-                <div class="input-box">
-                    <input type = "text" placeholder = "Username" required></input>
-                </div>
-                <div class="input-box">
-                    <input type = "password" placeholder = "Password" required></input>
-                </div>
-
-                <div class = "remember-forgot">
-                    <label class="login-text">Remember me </label>
-                    <a href = "#">Forgot password?</a>
-                </div>
-
-                <button type = "submit" class = "btn">Login</button>
-
-                <div class = "register-link">
-                    <p class="login-text">Don't have an account? <a href = "#">Register</a></p>
-                </div>
-            </form>
-        </div>
+      <div className="background-image-9">
+        <h1 className="background-text-about-h1">About Resonate Gifts</h1>
+        <p class="background-text-about">Best company ever created by mankind, etc...</p>
+        <p class="background-text-about">[Note: Add images here of customers receiving their products for social credibility/validation to new users]</p>
       </div>
-
 
       <div className="background-image-2">
   
@@ -109,4 +88,4 @@ const Login = () => {
   );
 }
 
-export default Login;
+export default About;

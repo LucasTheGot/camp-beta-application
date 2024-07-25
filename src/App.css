@@ -35,6 +35,27 @@
   backdrop-filter: blur(5px); /* Apply blur effect to the background */
 }
 
+.background-image-9 {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Set height to 100% of the viewport height */
+  background-image: url('../src/images/background_image_9.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-image-9::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 .background-logo {
   width: 300px; /* Adjust size as needed */
   margin-bottom: 20px;
@@ -59,6 +80,24 @@
   animation: slideUpText 1s ease-out forwards; /* Apply slide-up animation */
   margin: 20px 0; /* Adjust margin to create space between elements */
   z-index: 1; /* Ensure it's above the background */
+}
+
+.background-text-about {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  margin: 20px 0; /* Adjust margin to create space between elements */
+  z-index: 1; /* Ensure it's above the background */
+}
+
+.background-text-about-h1 {
+  color: #ffffff; 
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+  margin: 20px 0; /* Adjust margin to create space between elements */
+  z-index: 1; /* Ensure it's above the background */
+  position: relative; /* Ensure it's positioned relative to its normal flow */
+  top: -260px; /* Adjust this value to move the text up */
 }
 
 @keyframes fadeInButton {
